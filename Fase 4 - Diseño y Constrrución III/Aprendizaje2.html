@@ -1,10 +1,90 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Documento sin título</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
 </head>
 
 <body>
+    <!-- Sección del encabezado -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <header>
+        <img src="img/LogoUNAD.png" alt="Imagen de logo" height="73" width="150">
+        <h1>Listas y enlaces</h1>
+        <img src="img/htmlycss.png" alt="Imagen de logo" height="100" width="200">
+    </header>
+
+    <!-- Barra de menú horizontal -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Temas</a>
+                <ul class="dropdown">
+                    <li><a href="tema1.html">Tema 1</a></li>
+                    <li><a href="tema2.html">Tema 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="dropdown">
+                    <li><a href="recurso1.html">Video FlexBox</a></li>
+                    <li><a href="recurso2.html">Video Listas y Enlaces</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Aprendizaje</a>
+                <ul class="dropdown">
+                    <li><a href="Aprendizaje1.html">Cuestionario FlexBox</a></li>
+                    <li><a href="Aprendizaje2.html">Cuestionario Listas Enlaces</a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seccion central -->
+
+    <div class="contenedor">
+        <aside>
+            <h4>Pagina de Facebook</h4>
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Funadccavzipaquira&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="331" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+        <section>
+            <!-- aquí debo cambiar en cada página con los contenidos -->
+				<form>
+					<h1><label class="col-form-label-sl" style="border-bottom-color: blue">Formulario de Respuestas Listas y Enlaces</label></h1>
+					<div class="form-group">
+					  <br> <label for="nombre">Los elementos de las listas son:</label> <br>
+								<input class="form-check-input" type="radio" name="preg1" value="1" /> Etiqueta li<br/>
+    							<input class="form-check-input" type="radio" name="preg1" value="2" /> Etiqueta ul<br/>
+    							<input class="form-check-input" type="radio" name="preg1" value="3" /> Etiqueta ol<br/>
+								<input class="form-check-input" type="radio" name="preg1" value="4" /> Todas las anteriores<br/>
+					</div>
+					<div class="form-group">
+					 <br> <label for="email">Los elementos de las listas descriptivas son:</label> <br>
+								<input class="form-check-input" type="radio" name="preg2" value="1" /> Etiqueta dl<br/>
+    							<input class="form-check-input" type="radio" name="preg2" value="2" /> Etiqueta dd<br/>
+								<input class="form-check-input" type="radio" name="preg2" value="3" /> Todas las anteriores<br>
+					</div>
+					 <br> <button type="submit" class="btn btn-success">Enviar</button>
+
+					</form>
+        </section>
+
+    </div>
+    <!-- Pie de página -->
+    <footer>
+        <p> © Copyleft Fasamega.org | fecha de actualización: Abril 2022 <br>
+            Diseño, código HTML5 y programación hecho a mano por nosotros usando herramientas de Software Libre.
+
+        </p>
+
+
+    </footer>
 </body>
+
 </html>
